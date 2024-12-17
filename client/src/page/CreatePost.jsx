@@ -27,7 +27,7 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const response = await fetch('https://jarvis-i-r8yj.vercel.app/api/v1/jarvis/generate-image', {
+        const response = await fetch('https://jarvis-i.vercel.app/jarvis/generate-image', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -55,7 +55,7 @@ const CreatePost = () => {
     if (form.prompt && form.photo) {
       setLoading(true);
       try {
-        const response = await fetch('https://jarvis-i-r8yj.vercel.app/api/v1/post', {
+        const response = await fetch('https://jarvis-i.vercel.app/api/v1/post', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
