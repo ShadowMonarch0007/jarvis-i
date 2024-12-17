@@ -17,6 +17,7 @@
     "express": "^4.21.2",
     "mongoose": "^8.9.1",
     "nodemon": "^3.1.9",
+    "openai": "^4.77.0",
     "openapi": "^1.0.1"
   }
 }
