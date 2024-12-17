@@ -27,7 +27,7 @@ const CreatePost = () => {
     if (form.prompt) {
       try {
         setGeneratingImg(true);
-        const response = await fetch('https://jarvis-i.onrender.com/jarvis/generate-image', {
+        const response = await fetch('https://jarvis-i.onrender.com/jarvis', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
