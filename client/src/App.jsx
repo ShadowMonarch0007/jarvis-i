@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter, Link, Route, Routes } from 'react-router-dom'
-import { logo } from '../public/jarvis.png';
+import { jarvis } from './assets';
 import { Home, CreatePost } from './page';
 
 const App = () => {
@@ -9,7 +9,7 @@ const App = () => {
       <header className="w-full flex justify-between items-center bg-white sm:px-8 px-4 py-4 border-b border-b-[#e6ebf4]">
         <Link to="/">
           <div className="flex items-center gap-2">
-            <Image className="h-16 w-16" src={logo} />
+            <Image className="h-16 w-16" src={jarvis} />
             <p className="font-bold text-3xl font-code">JARVIS</p>
           </div>
         </Link>
